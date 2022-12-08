@@ -8,6 +8,8 @@ class SweatwaterTest
     public string $comments;
     public string $shipdateExpected;
 
+    public string $classification = '';
+
     //PHPStorm autogen getters + setters
     /**
      * @return int
@@ -56,6 +58,24 @@ class SweatwaterTest
     {
         $this->shipdateExpected = $shipdateExpected;
     }
+
+    /**
+     * @return string
+     */
+    public function getClassification(): string
+    {
+        return $this->classification;
+    }
+
+    /**
+     * @param string $classification
+     */
+    public function setClassification(string $classification): void
+    {
+        $this->classification = $classification;
+    }
+
+
 
 
 }
