@@ -1,7 +1,5 @@
 <?php
 
-include_once "DatabaseAccess.php";
-
 class DatabaseAccessManager
 {
     private static ?DatabaseAccess $instance = null;
