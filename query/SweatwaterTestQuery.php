@@ -42,10 +42,10 @@ class SweatwaterTestQuery
                         comments,
                         shipdate_expected,
                         (CASE
-                            WHEN comments LIKE '%candy%' THEN 'Candy'
-                            WHEN comments LIKE '%call%' THEN 'Call Needed?'
-                            WHEN comments LIKE '%refer%' THEN 'Referred By'
-                            WHEN comments LIKE '%signature%' THEN 'Signature'
+                            WHEN comments LIKE '% candy%' THEN 'Candy'
+                            WHEN comments LIKE '% call%' THEN 'Call Needed?'
+                            WHEN comments LIKE '% refer%' THEN 'Referred By'
+                            WHEN comments LIKE '% signature%' THEN 'Signature'
                             ELSE 'Miscellaneous' 
                         END) AS classification
                     
